@@ -2,38 +2,52 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="source/css/style.css" rel="stylesheet">
+    <link href="source/outline.css" rel="stylesheet">
     <title>HTML Academy:Седона adaptive</title>
   </head>
   <body>
     <header class="page-header">
+    	<!-- <section class="main-nav">
+    		<div class="site-list__item">
+    			<div class="site-navtext">
+    				<a>Главная</a>
+    				<div class="close-button">
+    			</div>
+    		</div>
+    		<div class="site-list__item"></div>
+    	</section>
+    	--> 
+
     	<section>
         <nav class="main-nav">
 		  <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
-          <div class="main-nav__wrapper">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Фото и видео</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
-            </li>
+         	 <div class="main-nav__wrapper">
+	            <li class="site-list__item site-list__item--active">
+	              <a>Главная</a>
+	            </li>
+	            <li class="site-list__item">
+	              <a href="#">Фото и видео</a>
+	            </li>
+	            <li class="site-list__item">
+	              <a href="#">Форма отзыва</a>
+	            </li>
+	            <li class="site-list__item">
+	              <a href="#">HTML Academy</a>
+	            </li>
+        	</div>    
           </ul>
-        </div>
         </nav>
       </section>
     </header>
     <main class="page-main">
     	<h1 class="visually-hidden">Седона</h1>
-    	<section class="welcome__svg">
-        <img src="#" width="150" height="100" alt="welcome Седона">
-      </section>
+    	<section class="page-main__svg">
+        <img src="source/img/bg-back-mobile@1x.jpg" width="320" height="389" alt="welcome Седона">
+        <img src="source/img/text-sedona-index.svg" width="281" height="214" alt="welcome Седона">
+      	</section>
     	<section class="reasons">
     		<h2 class="reasons__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
     		<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -41,6 +55,7 @@
     	<section class="reason__paragraph">
     		<h3 class="reasons__title">Настоящий городок №1</h3>
     		<p class="reasons__description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+    		<img src="source/img/main-city-tablet@1x.jpg" width="320" height="260" alt="Фото города">
     		<ul class="features">
     		 <li class="features__item features__item--house">
     		 	<h3><b>Жилье</b></h3>
@@ -57,19 +72,20 @@
     		</ul>
     	</section>
     	<section class="reason__paragraph">
-    		<h3 class="reasons__title">Там есть мост дьявола №2</h3>
+    		<h3 class="reasons__title">Там есть мост дьявола <br>№2</br></h3>
     		<p class="reasons__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+    		<img src="source/img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
     	</section>
     	<section class="reason__paragraph">
-    		<h3 class="reasons__title">Небольшая площадь №3</h3>
+    		<h3 class="reasons__title">Небольшая площадь <br>№3</br></h3>
     		<p class="reasons__description">Все достопримечательности находятся очень близко</p>
     	</section>
     	<section class="reason__paragraph">
-    		<h3 class="reasons__title">Красивая дорога №4</h3>
-    		<p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!/p>
+    		<h3 class="reasons__title">Красивая дорога <br>№4</br></h3>
+    		<p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
     	</section>
     	<section class="reason__paragraph">
-    		<h3 class="reasons__title">Мало туристов №5</h3>
+    		<h3 class="reasons__title">Мало туристов <br>№5</br></h3>
     		<p class="reasons__description">Большинство едет в гранд каньон и толпится там</p>
     	</section>
     </main>
@@ -90,6 +106,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
+      	<img src="source/img/logo-htmlacademy.svg" width="108" height="39">
         <b class="copyright__text">Разработано:</b>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>

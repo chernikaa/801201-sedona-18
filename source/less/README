@@ -9,3 +9,6 @@ http://lesscss.org
 less/
 | - style.less
 | - [другие *.less файлы]
+
+
+ gulp.watch("source/less/**/*.less", gulp.series("css"));
