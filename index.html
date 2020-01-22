@@ -11,8 +11,8 @@
     <header class="page-header">
     	<section>
         <nav class="main-nav">
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-         	 <div class="main-nav__wrapper">
 	            <li class="site-list__item site-list__item--active">
 	              <a>Главная</a>
 	            </li>
@@ -25,19 +25,26 @@
 	            <li class="site-list__item">
 	              <a href="#">HTML Academy</a>
 	            </li>
-	            <li class="site-list__item">
-	              <button class="main-nav__toggle" type="button">Открыть меню</button>
+	            <li class="site-list__item--logo">
+	             <img src="source/img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
+	           	 <button class="main-nav__toggle" type="button">Открыть меню</button>
 	            </li>
-        	</div>    
-          </ul>
+        	   </ul>
+          </div>
         </nav>
       </section>
     </header>
     <main class="page-main">
     	<h1 class="visually-hidden">Седона</h1>
     	<section class="page-main__svg">
-        <img src="source/img/bg-back-mobile@1x.jpg" width="320" height="389" alt="welcome Седона">
-        <img src="source/img/text-sedona-index.svg" width="281" height="214" alt="welcome Седона">
+    		<div class="page-main__svg_background">
+        		<!--<img src="source/img/bg-back-mobile@1x.jpg" width="320" height="389" alt="welcome Седона"> -->
+	        	<div class="page-main__svg--text">
+	        		<img src="source/img/text-sedona-index.svg" width="281" height="214" alt="welcome Седона">
+	        	</div>
+
+        	</div>
+        	
       	</section>
     	<section class="reasons">
     		<h2 class="reasons__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -85,7 +92,7 @@
   	<div class="page-footer__social social">
   		<b class="social__title">#visitsedona</b>
         <ul class="social__list">
-          <li class="">
+          <li class="social__item">
             <a class="social__link social__link--twitter" href="#">Седона в Твитеере</a>
           </li>
           <li class="social__item">
